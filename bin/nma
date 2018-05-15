@@ -1,0 +1,5 @@
+#/bin/bash
+
+sudo ls >/dev/null
+sudo nm-applet &
+

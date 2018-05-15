@@ -1,0 +1,51 @@
+#!/bin/bash
+
+export LOCAL=localhost
+export LPORT=5000
+export RPORT=22
+export USER=remote-proxy-user
+export HOST=remote-proxy-server
+
+## Override all config settings if config file exists in ~/bin/
+if [ -e ~/bin/socksit.cfg ] ; then
+	. ~/bin/socksit.cfg
+fi
+
+## Error check for either elinks or curl
+if [ -e $(which elinks) ] ; then
+	export URLTOOL="$(which elinks) -dump " 
+elif [ -e $(which curl) ] ; then
+	export URLTOOL="$(which curl) -s " 
+else
+	echo "ERROR: socksit requires either elinks suite or curl tool..."
+fi
+
+export SSHBIN=$(which ssh)
+
+## figlet gives cool oversized banner print outs.. if not.. just use echo
+if [ -e $(which figlet) ] ; then
+	export printit="$(which figlet) -c -f big "
+else
+	export printit="echo "
+fi 
+
+$printit "Let's SOCKSIT !!"
+echo "sudo ssh -f -Nn -D $LOCAL:$LPORT -p $RPORT $USER@$HOST"
+sudo $SSHBIN -f -Nn -D $LOCAL:$LPORT -p $RPORT $USER@$HOST
+
+if [ $? == "0" ]; then 
+	echo "STATUS: proxy set up on $LOCAL:$LPORT.. turn on browser SOCKS5."
+	sleep 1
+	echo "TESTING: icanhazip.com thru proxy"
+	proxychains $URLTOOL icanhazip.com >/dev/null 2>&1
+	sleep 1
+	export IP=$(proxychains $URLTOOL icanhazip.com 2>/dev/null | tail -1)
+	echo""
+	$printit SOCKS-5 Proxy; $printit ENGAGED!
+	$printit IP = $IP 
+	sleep 2
+else
+	echo "ERROR: proxy failed."
+	sleep 2
+fi
+

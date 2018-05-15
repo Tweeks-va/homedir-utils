@@ -1,0 +1,9 @@
+#!/bin/bash
+## Wrapper script for running Arduino as root and fixing any perms after completion.
+
+ARDVER="1.6.7"
+
+cd ~/Arduino
+sudo ~/Applications/arduino-$ARDVER/arduino && sudo chown -R $USER:$USER /home/$USER/Arduino/
+cd -
+
