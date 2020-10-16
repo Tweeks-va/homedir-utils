@@ -1,14 +1,37 @@
 #!/bin/bash
 
+## All settings below are sourced/overridden from appropriate socksit-xxx.cfg file
 export LOCAL=localhost
 export LPORT=5000
 export RPORT=22
 export USER=remote-proxy-user
 export HOST=remote-proxy-server
 
+## DOCUMENTATION
+## This SOCKS5 script is designed to be symlined to with the name of the config you
+## want to source, like this:
+## tweeks@roadwarrior ~/bin $ ls -l ~/bin/socksit*
+##	 -rwxr-xr-x 1 tweeks tweeks 1397 Oct 16 09:26 /home/tweeks/bin/socksit
+## 	-rw-r--r-- 1 tweeks tweeks  163 Oct 16 08:57 /home/tweeks/bin/socksit.cfg
+##	 lrwxrwxrwx 1 tweeks tweeks    7 Oct 16 09:02 /home/tweeks/bin/socksit-dfw -> socksit
+##	 -rw-r--r-- 1 tweeks tweeks  156 Oct 16 09:03 /home/tweeks/bin/socksit-dfw.cfg
+##	 lrwxrwxrwx 1 tweeks tweeks    7 Oct 16 09:01 /home/tweeks/bin/socksit-nrvr -> socksit
+##	 -rw-r--r-- 1 tweeks tweeks  153 Oct 16 09:19 /home/tweeks/bin/socksit-nrvr.cfg
+##	 lrwxrwxrwx 1 tweeks tweeks    7 Oct 16 09:01 /home/tweeks/bin/socksit-vt -> socksit
+##	 -rw-r--r-- 1 tweeks tweeks  169 Oct 16 09:17 /home/tweeks/bin/socksit-vt.cfg
+## 
+## The local port, remote port, ssh username and ssh/socks host are all sourced from the 
+## appropriate .cfg file. If you have figlet installed, you'll have a nicer, ASCII ART
+## font instead of plain old echo feedback.
+
+
+
+## if script name is sockit-aws then config file socksit-aws.cfg will be used
+export CONFIG=$0.cfg
 ## Override all config settings if config file exists in ~/bin/
-if [ -e ~/bin/socksit.cfg ] ; then
-	. ~/bin/socksit.cfg
+if [ -e $CONFIG ] ; then
+	echo "... soucing $CONFIG"
+	. $CONFIG
 fi
 
 ## Error check for either elinks or curl
