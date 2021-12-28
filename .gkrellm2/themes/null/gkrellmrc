@@ -1,0 +1,77 @@
+# null - by lordzork industries <lordzork@lordzork.com>
+# based on BlueSteel by Dan Erat <erat@cats.ucsc.edu - danerat@mindspring.com>
+
+author = lordzork indsutries (http://lordzork.com/)
+
+frame_left_width		= 4
+frame_right_width		= 4
+chart_width_min			= 50
+chart_width_max			= 64
+chart_width_ref			= 64
+allow_scaling			= true
+
+chart_in_color			= #ffffff
+chart_in_color_grid		= #000000
+chart_out_color			= #323232
+chart_out_color_grid		= #000000
+
+bg_grid_mode			= 1
+
+rx_led_x 			= 3
+rx_led_y 			= 8
+tx_led_x 			= -3
+tx_led_y 			= 8
+
+StyleChart *.border		= 3,3,2,2
+
+StylePanel *.border		= 2,2,2,3          # Top border of 3 moves labels down.
+StylePanel *.label_position	= 50
+StylePanel *.margin		= 3
+
+StyleMeter *.border		= 2,2,4,4
+#StyleMeter *.label_position	= 50
+StylePanel *.margin		= 3
+StyleMeter mem.label_position	= 50
+StyleMeter swap.label_position	= 50
+StyleMeter fs.label_position	= 0
+
+# extra info 1 colour
+StyleChart *.textcolor		= #cee0ea #000000 shadow
+
+# extra info 2 colour
+StyleChart *.alt_textcolor	= #cee0ea #000000 shadow
+
+# chart label colour
+StylePanel *.textcolor		= #cee0ea #000000 shadow
+
+# cal colour (except for date)
+StyleMeter cal.textcolor	= #cee0ea #000000 none
+
+# alt1_color
+StylePanel *.alt_textcolor	= #cee0ea #ffffff none
+
+# hostname colour
+StyleMeter host.textcolor	= #cee0ea #000000 none
+
+# time colour
+StyleMeter *.textcolor		= #cee0ea #000000 none
+
+# date and seconds
+StyleMeter *.alt_textcolor	= #cee0ea #000000 none
+
+#meter_color
+StyleMeter fs.textcolor		= #cee0ea #000000 none
+StyleMeter mem.textcolor	= #cee0ea #000000 none
+StyleMeter swap.textcolor	= #cee0ea #000000 none
+StyleMeter mail.textcolor	= #cee0ea #000000 none
+
+large_font	= "-adobe-helvetica-medium-r-normal-*-*-100-*-*-p-*-iso8859-1"
+label_font	= "-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1"
+normal_font	= "-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1"
+small_font	= "-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1"
+
+# these fonts are much better, uncomment if you have them
+#large_font	= "-ttf-trebuchet ms-medium-r-normal-*-*-80-*-*-p-*-iso8859-1"
+#label_font	= "-ttf-trebuchet ms-medium-r-normal-*-*-70-*-*-p-*-iso8859-1"
+#normal_font	= "-ttf-trebuchet ms-medium-r-normal-*-*-70-*-*-p-*-iso8859-1"
+#small_font	= "-Nucleus-Gamow-Medium-R-Semicondensed--90-100-75-75-C-60-ISO8859-1"

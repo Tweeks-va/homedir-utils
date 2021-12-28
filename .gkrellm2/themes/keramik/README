@@ -1,0 +1,16 @@
+Keramik v0.2.1 for Gkrellm
+SkyShadow  skyshadow@slipstream.ods.org
+
+This theme is designed to match the KDE Keramik style so significant portions are from sceencaptures of Keramik in action.  In addition the leds are derived from the go, help, and magnify icons in the Crystal icon set.
+
+To install, extract to your ~/.gkrellm2/themes/ directory.
+
+License
+
+This theme is released under the terms of the GNU GPL: http://www.gnu.org/licenses/gpl.txt
+
+Todo
+
+In version 0.3 I will add an animated Crystal style envelope for the mail notification and some new chart backgrounds.
+
+Enjoy!

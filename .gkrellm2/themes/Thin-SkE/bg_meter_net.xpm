@@ -1,0 +1,9 @@
+/* XPM */
+static char * bg_meter_cal_xpm[] = {
+"4 4 2 1",
+" 	c None",
+".	c #B2B2B2",
+"....",
+"....",
+"....",
+"...."};

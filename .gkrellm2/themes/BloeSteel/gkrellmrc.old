@@ -1,0 +1,143 @@
+author = "TaoX { Brian Hinson; } (TaoX@pobox.com)"
+
+
+chart_width_min  = 50
+chart_width_max  = 200
+
+
+# Frames can be rendered to heights and widths different from the
+# drawn image sizes.  0 means use the drawn image width or height.
+# The default frame_left_width and frame_right_width is left at 4 for
+# backwards compatibility with previous GKrellM versions.
+frame_top_height     = 0
+frame_bottom_height  = 0
+frame_left_width     = 0
+frame_right_width    = 0
+
+chart_in_color       = #737384
+chart_in_color_grid  = #424a63
+chart_out_color      = #424a63
+chart_out_color_grid = #737384
+
+chart_grid_mode = 0
+
+
+# Label font and colors set here.  The alt_font is for miscellaneous
+# extra labelling and should be a smaller font than the label_font.
+# The label_color and alt1_color are used for font draws on panel backgrounds,
+# while alt2_color is used for font draws in the bg_chart area.
+# The large font is used for clock/calendar digits and uses time_color.
+# These global colors may be overridden below.
+
+large_font = "-adobe-courier-medium-r-normal-*-*-120-*-*-m-*-iso8859-1"
+label_font = "-adobe-courier-medium-r-normal-*-*-100-*-*-m-*-iso8859-1"
+alt_font   = "-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1"
+
+label_draw_effect = shadow
+time_draw_effect  = shadow
+meter_draw_effect = none
+alt1_draw_effect  = shadow
+alt2_draw_effect  = shadow
+
+label_color        = #ffffff
+label_shadow_color = #000000
+meter_color        = #8494b5
+meter_shadow_color = #000000
+time_color         = #ffffff
+time_shadow_color  = #000000
+alt1_color	   = #7a87ab
+alt1_shadow_color  = #17161a
+alt2_color         = #8494b5
+alt2_shadow_color  = #000000
+
+rx_led_x = 0
+rx_led_y = 1
+tx_led_x = -1
+tx_led_y = 1
+
+
+# If bg_timer image exists in theme dir, it will be placed under the timer
+# only.  If no bg_timer image exists, set what to do with ppp_border_mode.
+#  0: no border   1: put timer in bg_bordered   2: put timer and button in
+#  bg_bordered
+ppp_border_mode = 1
+
+# Borders for images are specified with comma separated numbers in the order:
+#    left border, right border, top border, bottom border
+
+
+# Borders for bg_panel and bg_panel.xxx images for charts
+style       chart.panel_border = 3,20,4,7
+style       chart.inet.panel_border = 40,40,3,6
+style       chart.net.panel_border = 20,20,3,6
+
+# Borders for bg_meter and bg_meter_xxx
+style       meter.panel_border        = 4,4,4,4
+style       meter.clock.panel_border  = 2,2,0,2
+style       meter.cal.panel_border    = 2,2,4,4
+style       meter.host.panel_border   = 2,2,2,0
+
+# Border for bg_bordered
+bordered_border = 4,4,4,4
+
+# Borders for the frame images
+frame_top_border    = 20,45,2,2
+frame_bottom_border = 60,10,2,2
+frame_left_border  = 7,3,57,160
+frame_right_border = 0,0,50,0
+
+style       chart.label = 0
+style       chart.inet.label = center
+style       chart.net.label = center
+style       meter.label = 50	# Equivalent to center
+style       meter.fs.label = 0	# Left justify
+
+
+# Colors for specific panels may be overridded with these style settings:
+#style chart.cpu.label_color = #000000
+#style chart.cpu.label_shadow_color = #000000
+#style chart.cpu.label_effect = shadow
+#style chart.disk.label_color = #000000
+#style chart.disk.label_shadow_color = #000000
+#style chart.disk.label_effect = shadow
+#style chart.proc.label_color = #000000
+#style chart.proc.label_shadow_color = #000000
+#style chart.proc.label_effect = shadow
+#style chart.inet.label_color = #000000
+#style chart.inet.label_shadow_color = #000000
+#style chart.inet.label_effect = shadow
+#style chart.net.label_color = #000000
+#style chart.net.label_shadow_color = #000000
+#style chart.net.label_effect = shadow
+
+#style meter.mem.label_color = #000000
+#style meter.mem.label_shadow_color = #000000
+#style meter.mem.label_effect = shadow
+#style meter.swap.label_color = #000000
+#style meter.swap.label_shadow_color = #000000
+#style meter.swap.label_effect = shadow
+#style meter.fs.label_color = #000000
+#style meter.fs.label_shadow_color = #000000
+#style meter.fs.label_effect = shadow
+#style meter.mail.label_color = #000000
+#style meter.mail.label_shadow_color = #000000
+#style meter.mail.label_effect = shadow
+#style meter.apm.label_color = #000000
+#style meter.apm.label_shadow_color = #000000
+#style meter.apm.label_effect = shadow
+#style meter.uptime.label_color = #000000
+#style meter.uptime.label_shadow_color = #000000
+#style meter.uptime.label_effect = shadow
+#style meter.host.label_color = #000000
+#style meter.host.label_shadow_color = #000000
+#style meter.host.label_effect = shadow
+
+# clock and cal colors interact with each other.  clock settings apply
+# to clock digits and calendar day digits.  cal setting apply to
+# calendar day, month and clock am/pm text.
+#style meter.clock.label_color = #000000
+#style meter.clock.label_shadow_color = #000000
+#style meter.clock.label_effect = shadow
+#style meter.cal.label_color = #000000
+#style meter.cal.label_shadow_color = #000000
+#style meter.cal.label_effect = shadow

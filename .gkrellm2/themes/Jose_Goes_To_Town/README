@@ -1,0 +1,6 @@
+If you have the tahoma font I would recomend using these lines in the main gkrellmrc:
+large_font = -ttf-tahoma-bold-r-normal-*-10-*-*-*-p-*-iso8859-1
+normal_font = -ttf-tahoma-medium-r-normal-*-10-*-*-*-p-*-iso8859-1
+small_font = -ttf-tahoma-medium-r-normal-*-9-*-*-*-p-*-iso8859-1
+
+Best viewed at 60x60 (Monitor Width x Chart Heights).

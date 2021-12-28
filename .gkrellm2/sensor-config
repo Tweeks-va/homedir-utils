@@ -1,0 +1,31 @@
+sensor sensor_config_version 1
+sensor sensor_sysdep_private 2
+sensor sensor_float_factor 10000
+sensor gkrellm_float_factor 1000
+sensor sysdep_option use_nvclock 0
+sensor "temp1" "acpitz@0/temp1" 0 0 0 0
+sensor "temp2" "acpitz@0/temp2" 0 0 0 0
+sensor "temp3" "acpitz@0/temp3" 0 0 0 0
+sensor "Package id 0" "coretemp@0/temp1" 0 0 0 0
+sensor "Core 0" "coretemp@0/temp2" 0 0 0 0
+sensor "Core 1" "coretemp@0/temp3" 0 0 0 0
+sensor "CPU" "dell_smm@0/temp1" 0 0 0 0
+sensor "Ambient" "dell_smm@0/temp2" 0 0 0 0
+sensor "SODIMM" "dell_smm@0/temp3" 0 0 0 0
+sensor "Other" "dell_smm@0/temp4" 0 0 0 0
+sensor "temp1" "iwlwifi_1@0/temp1" 0 0 0 0
+sensor "temp" "thermal_zone0" 10000 0 0 0
+sensor "temp" "thermal_zone1" 10000 0 0 0
+sensor "temp" "thermal_zone2" 10000 0 0 0
+sensor "temp" "thermal_zone3" 10000 0 0 0
+sensor "temp" "thermal_zone4" 10000 0 0 0
+sensor "temp" "thermal_zone5" 10000 0 0 0
+sensor "temp" "thermal_zone6" 10000 0 0 0
+sensor "temp" "thermal_zone7" 10000 0 0 0
+sensor "temp" "thermal_zone8" 10000 0 0 0
+sensor "temp" "thermal_zone9" 10000 0 0 0
+sensor "Processor" "dell_smm@0/fan1" 0 0 1 0
+sensor "in0" "BAT0@0/in0" 0 0 0 0
+sensor units_fahrenheit 0
+sensor show_units 1
+sensor volt_display_mode 0

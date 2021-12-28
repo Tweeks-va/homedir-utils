@@ -1,0 +1,39 @@
+author = "Brian Dibblee bdibblee@usermail.com"
+
+
+frame_left_width  = 4
+frame_right_width  = 4
+
+
+#StyleChart  *.border = 3,3,2,2
+
+#StylePanel  *.border = 2,2,2,3
+#StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+#StylePanel  net.border = 0,0,3,0
+#StylePanel  net.label_position = 35
+
+
+#StyleMeter  *.border = 2,2,4,4
+#StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+#StyleMeter  mem.label_position = 100
+#StyleMeter  swap.label_position = 100
+
+StyleMeter  fs.label_position = 0
+
+#alt2_color
+StyleChart  *.textcolor = #c0c0c0 #000000 shadow
+StyleChart  *.alt_textcolor = #c0c0c0 #000000 shadow
+
+#label_color
+StylePanel  *.textcolor = #c2c2c2 #000000 shadow
+StyleMeter	cal.textcolor = #c2c2c2 #000000 shadow
+
+#alt1_color
+StylePanel  *.alt_textcolor = #708090 #000000 shadow
+StyleMeter  host.textcolor = #708090 #000000 shadow
+
+#time_color
+StyleMeter  *.textcolor = #c0c0c0 #000000 shadow
+StyleMeter  *.alt_textcolor = #c0c0c0 #000000 shadow

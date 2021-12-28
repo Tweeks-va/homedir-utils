@@ -1,0 +1,8 @@
+StyleChart *.textcolor = #be9a23 #000000 shadow
+StyleChart *.alt_textcolor = #be9a23 #000000 shadow
+
+StylePanel *.textcolor = #000000 #ffffff none
+StylePanel *.alt_textcolor = #000000 #ffffff none
+
+StyleMeter *.textcolor = #000000 #ffffff none
+StyleMeter *.alt_textcolor = #000000 #ffffff none

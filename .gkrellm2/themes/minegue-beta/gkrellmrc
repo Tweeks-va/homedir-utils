@@ -1,0 +1,40 @@
+author = "John Fregeau <fregeau@mit.edu>"
+
+frame_top_height = 3
+frame_bottom_height = 3
+frame_left_width = 3
+frame_right_width = 3
+
+chart_in_color       = #52c555
+chart_in_color_grid  = #229525
+chart_out_color      = #cec4bf
+chart_out_color_grid = #9e948f
+
+bg_grid_mode = 1
+
+large_font  = "-*-helvetica-medium-r-normal--12-*-*-*-*-*-*-*"
+normal_font = "-*-helvetica-medium-r-normal--10-*-*-*-*-*-*-*"
+small_font  = "-*-helvetica-medium-r-normal--8-*-*-*-*-*-*-*"
+
+rx_led_x = 3
+rx_led_y = 8
+tx_led_x = -3
+tx_led_y = 8
+
+StyleChart  *.border = 3,3,2,2
+StyleChart  *.textcolor = #ffffff #ffffff none
+StyleChart  *.alt_textcolor = #ffffff #ffffff none
+
+StylePanel  *.border = 2,2,2,3
+StylePanel  *.margin = 3
+StylePanel  *.textcolor = #000000 #000000 none
+StylePanel  *.alt_textcolor = #000000 #000000 none
+
+StyleMeter  *.border = 2,2,4,4
+StyleMeter  *.krell_depth = 1
+StyleMeter  mem.label_position = 100
+StyleMeter  swap.label_position = 100
+StyleMeter  fs.label_position = 0
+StyleMeter  *.textcolor = #000000 #000000 none
+StyleMeter  *.alt_textcolor = #000000 #000000 none
+

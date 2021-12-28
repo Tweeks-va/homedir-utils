@@ -1,0 +1,24 @@
+
+frame_left_width  = 4
+frame_right_width  = 4
+
+#StyleChart  *.border = 0,0,0,0
+
+#StylePanel  *.border = 3,3,2,2
+#StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+#StylePanel  net.border = 0,0,3,0
+#StylePanel  net.label_position = 35
+
+
+#StyleMeter  *.border = 2,2,3,3
+#StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+
+StyleMeter  fs.label_position = 0
+
+#meter_color
+StyleMeter	fs.textcolor = #ede6ef #000000 shadow
+StyleMeter	mem.textcolor = #ede6ef #000000 shadow
+StyleMeter	swap.textcolor = #ede6ef #000000 shadow
+StyleMeter	mail.textcolor = #ede6ef #000000 shadow

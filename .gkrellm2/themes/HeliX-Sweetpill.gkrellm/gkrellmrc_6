@@ -1,0 +1,65 @@
+# Original gkrellmrc config file
+# Blackcurrant gkrellmrc config gile 
+
+author = "_n0l0G1k_     (n0l0g1k@sdf.lonestar.org) http://n0l0g1k.bizland.com
+
+
+frame_left_width      = 00
+frame_right_width    = 00
+chart_width_min  = 50
+chart_width_max  = 200
+#chart_width_ref  = 140
+
+allow_scaling    = true
+
+
+bg_grid_mode = 0
+
+large_font = "artsie"
+normal_font = "artsie"
+small_font   = "artsie"
+
+
+
+rx_led_x = -1
+rx_led_y = 3
+tx_led_x = -1
+tx_led_y = 11
+
+frame_top_border = 15,15,2,2
+frame_bottom_border = 15,15,2,2
+
+timer_time_x = 10
+timer_button_x = -10
+
+StyleChar  *.font = normal_font
+#StyleChart  *.border = 0,0,0,0
+
+StylePane;  *.font = large
+StylePanel  *.border = 4,4,4,4
+StylePanel  *.label_position = 0
+StylePanel  *.margin = 3
+StylePanel  net.border = 0,0,3,0
+StylePanel  net.label_position = 35
+
+
+StyleMeter  *.font = small
+StyleMeter  *.border = 5,5,5,5
+StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+StyleMeter  mem.label_position = 50
+StyleMeter  swap.label_position = 50
+
+StyleMeter  fs.label_position = 0
+
+StyleChart  *.textcolor = black #000000 none
+StyleChart  *.alt_textcolor = black #000000 none
+
+StylePanel  *.textcolor = black #000000 none
+StyleMeter	cal.textcolor = black #000000 none
+
+StylePanel  *.alt_textcolor = #00000 #000000 none
+StyleMeter  host.textcolor = #000000 #000000 none
+
+StyleMeter  *.textcolor = black #000000 none
+StyleMeter  *.alt_textcolor = black #000000 none

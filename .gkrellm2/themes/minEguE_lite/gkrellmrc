@@ -1,0 +1,43 @@
+
+
+frame_left_width  = 4
+frame_right_width  = 4
+
+chart_in_color       = #000000
+chart_in_color_grid  = #555555
+chart_out_color_grid = #9999aa
+chart_out_color      = #ffffff
+
+large_font = kates 
+label_font = "shine"
+normal_font = nexus 
+small_font   = shine
+
+
+bg_grid_mode = 1
+
+
+StyleChart  *.border = 3,3,2,2
+
+StylePanel  *.border = 2,2,2,2
+#StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+#StylePanel  net.border = 0,0,3,0
+#StylePanel  net.label_position = 35
+
+
+StyleMeter  *.border = 3,3,2,2
+#StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+#StyleMeter  mem.label_position = 100
+#StyleMeter  swap.label_position = 100
+
+#StyleMeter  fs.label_position = 0
+#StyleMeter  *.textcolor = #ffffff #000000 shadow
+#StyleMeter  *.alt_textcolor = #ffffff #000000 shadow
+#alt2_color
+StyleMeter	fs.textcolor = #ffcb34 #000000 shadow
+StyleMeter	mem.textcolor = #ffcb34 #000000 shadow
+StyleMeter	swap.textcolor = #ffcb34 #000000 shadow
+StyleMeter	mail.textcolor = #ffcb34 #000000 shadow
+

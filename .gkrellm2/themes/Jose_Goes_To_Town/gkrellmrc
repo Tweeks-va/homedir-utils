@@ -1,0 +1,29 @@
+author = "aquari0		..:: aquari0@linuxfreak.com ::.."
+
+theme_alternatives = 5
+
+chart_in_color = #7891b0
+chart_in_color_grid = #819bbd
+chart_out_color = #5e6b7b
+chart_out_color_grid = #677687
+
+frame_top_border = 2,2,0,0
+frame_bottom_border = 2,2,0,0
+frame_left_border = 0,0,0,0
+frame_right_border = 0,0,0,0
+
+large_font = -b&h-lucida-bold-r-normal-*-*-100-*-*-p-*-iso8859-1
+normal_font = -b&h-lucida-medium-r-normal-*-*-100-*-*-p-*-iso8859-1
+small_font   = -adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+
+StyleChart *.textcolor = #000000 #000000 none
+StyleChart *.alt_textcolor = #000000 #000000 none
+StyleChart *.krell_depth = 1
+
+StylePanel *.textcolor = #000000 #ffffff none
+StylePanel *.alt_textcolor = #000000 #ffffff none
+StylePanel *.krell_depth = 1
+
+StyleMeter *.textcolor = #000000 #ffffff none
+StyleMeter *.alt_textcolor = #000000 #ffffff none
+StyleMeter *.krell_depth = 1

@@ -1,0 +1,58 @@
+# gkrellmrc theme configuration file template.
+author = "Jon Principe (jap3@cisunix.unh.edu)"
+
+
+
+frame_left_width  = 4
+frame_right_width  = 4
+
+chart_in_color       = #c1bd81
+chart_in_color_grid  = #c1bd81
+chart_out_color      = #8180aa
+chart_out_color_grid = #8181aa
+
+
+bg_grid_mode = 1
+
+large_font = -adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+normal_font = -adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+small_font   = -adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+
+
+rx_led_x = 3
+rx_led_y = 8
+tx_led_x = -3
+tx_led_y = 8
+
+StyleChart  *.border = 3,3,2,2
+
+StylePanel  *.border = 2,2,2,3
+StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+#StylePanel  net.border = 0,0,3,0
+#StylePanel  net.label_position = 35
+
+
+StyleMeter  *.border = 2,2,4,4
+StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+StyleMeter  mem.label_position = 100
+StyleMeter  swap.label_position = 100
+
+StyleMeter  fs.label_position = 0
+
+#alt2_color
+StyleChart  *.textcolor = #dadada #000000 shadow
+StyleChart  *.alt_textcolor = #dadada #000000 shadow
+
+#label_color
+StylePanel  *.textcolor = #ccc9ab #000000 shadow
+StyleMeter	cal.textcolor = #ccc9ab #000000 shadow
+
+#alt1_color
+StylePanel  *.alt_textcolor = #ccc9ab #000000 shadow
+StyleMeter  host.textcolor = #ccc9ab #000000 shadow
+
+#time_color
+StyleMeter  *.textcolor = #ccc9ab #000000 shadow
+StyleMeter  *.alt_textcolor = #ccc9ab #000000 shadow

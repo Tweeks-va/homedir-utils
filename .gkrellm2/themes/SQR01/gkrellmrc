@@ -1,0 +1,30 @@
+author = "aquari0		..:: aquari0@earthlink.net ::.."
+
+theme_alternatives = 5
+
+frame_top_border = 2,2,0,0
+frame_bottom_border = 2,2,0,0
+frame_left_border = 0,0,0,0
+frame_right_border = 0,0,0,0
+
+#alt2_color
+#StyleChart  *.textcolor = #efd097 #000000 none
+#StyleChart  *.alt_textcolor = #efd097 #000000 none
+
+#label_color
+StylePanel  *.textcolor = #000000 #ffffff none
+StyleMeter	cal.textcolor = #000000 #ffffff none
+
+#alt1_color
+StylePanel  *.alt_textcolor = #000000 #ffffff none
+StyleMeter  host.textcolor = #000000 #ffffff none
+
+#time_color
+StyleMeter  *.textcolor = #000000 #ffffff none
+StyleMeter  *.alt_textcolor = #000000 #ffffff none
+
+#meter_color
+StyleMeter	fs.textcolor = #000000 #ffffff none
+StyleMeter	mem.textcolor = #000000 #ffffff none
+StyleMeter	swap.textcolor = #000000 #ffffff none
+StyleMeter	mail.textcolor = #000000 #ffffff none

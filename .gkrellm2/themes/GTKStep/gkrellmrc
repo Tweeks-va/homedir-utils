@@ -1,0 +1,38 @@
+author = "Thadeu Penna <tjpp@if.uff.br>"
+
+frame_left_width  = 3
+frame_right_width  = 3
+
+chart_in_color       = gold
+chart_in_color_grid  = orange
+chart_out_color      = red
+chart_out_color_grid = red3
+
+bg_grid_mode = 1
+
+large_font = "-*lucida*-medium-r-normal-*-*-120-*-*-p-*-iso8859-1"
+normal_font = "outcast"
+small_font   = "-*lucida*-medium-r-normal-*-*-80-*-*-p-*-iso8859-1"
+
+rx_led_x = 3
+rx_led_y = 8
+tx_led_x = -3
+tx_led_y = 8
+
+StyleChart  *.border = 3,3,2,2
+StylePanel  *.border = 2,2,2,3
+StylePanel  *.margin = 3
+StyleMeter  *.border = 2,2,4,4
+StylePanel  *.margin = 3
+StyleMeter  mem.label_position = 100
+StyleMeter  swap.label_position = 100
+StyleMeter  fs.label_position = 0
+StyleChart  *.textcolor = #000000 #000000 none
+StyleChart  *.alt_textcolor = #000000 #000000 none
+StylePanel  *.textcolor = #000000 #000000 none
+StyleMeter	cal.textcolor = #000000 #000000 none
+StylePanel  *.alt_textcolor = #000000 #000000 none
+StyleMeter  host.textcolor = #000000 #000000 none
+StyleMeter  *.textcolor = #000000 #000000 none
+StyleMeter  *.alt_textcolor = #000000 #000000 none
+

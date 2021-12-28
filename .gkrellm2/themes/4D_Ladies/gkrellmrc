@@ -1,0 +1,65 @@
+#   ------ Sample gkrellmrc configuration file --------
+# Option settings here correspond (maybe some fuzz) to the default theme.
+# See the Themes file for a discussion of these options.
+# Change or add entries as required for your theme.
+
+author = "aquari0 [aquari0@linuxfreak.com]"
+
+frame_top_border = 2,2,0,0
+frame_bottom_border = 2,2,0,0
+frame_left_border = 0,0,0,0
+frame_right_border = 0,0,0,0
+
+# Fonts to use in the Style settings below.
+large_font = "-adobe-courier-bold-r-normal-*-*-120-*-*-m-*-*-*"
+normal_font = "-adobe-courier-medium-r-normal-*-*-100-*-*-m-*-*-*"
+small_font   = "-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-*-*"
+
+#   ------ If you got this font working.. give it a try.. looks really nice..   ------
+#   ------ with a geometry for charts of 60x60    ------ 
+#large_font = -ttf-tahoma-bold-r-normal-*-10-*-*-*-p-*-iso8859-1
+#normal_font = -ttf-tahoma-medium-r-normal-*-10-*-*-*-p-*-iso8859-1
+#small_font = -ttf-tahoma-medium-r-normal-*-9-*-*-*-p-*-iso8859-1
+
+chart_in_color = #7891b0
+chart_in_color_grid = #2e3b4b
+chart_out_color = #5e6b7b
+chart_out_color_grid = #4e5b6b
+
+bg_grid_mode = 1
+
+rx_led_x = -15
+rx_led_y = 3
+tx_led_x = -2
+tx_led_y = 3
+
+#StyleChart  *.border = 0,0,0,0
+
+#StylePanel  *.border = 3,3,2,2
+#StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+StylePanel  net.border = 0,0,3,0
+StylePanel  net.label_position = 27
+
+
+#StyleMeter  *.border = 2,2,3,3
+#StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+
+StyleMeter  fs.label_position = 0
+
+#alt2_color
+StyleChart  *.textcolor = black #000000 none
+StyleChart  *.alt_textcolor = black #000000 none
+
+#label_color
+StylePanel  *.textcolor = black #000000 none
+StyleMeter	cal.textcolor = black #000000 none
+
+#alt1_color
+StylePanel  *.alt_textcolor = black #000000 none
+StyleMeter  host.textcolor = black #000000 none
+
+#time_color
+StyleMeter  *.textcolor = black #000000 none
+StyleMeter  *.alt_textcolor = black #000000 none

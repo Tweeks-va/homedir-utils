@@ -1,0 +1,75 @@
+#   ------ gkrellmrc theme configuration file template. --------
+# Uncomment and modify configuration options in this file to change the
+# GKrellM defaults.  Uncomment means remove the '#' at the beginning of a
+# configuration line.
+
+# Credit the theme maker.  This will appear on the Themes configuration tab.
+
+author = "[ Overkill ]--[ overkill@mail.multinet.it ]"
+
+# You can restrict the adjustment range allowed for chart width depending
+# on how LED's, labels, PPP timer/button etc. fit or look.
+# If allow_scaling is true, then LED position and size is scaled according
+# to the chart_width/chart_width_ref ratio.  chart_width_ref is the width
+# you use for designing images and placing LEDs.  PPP button width will
+# also be scaled.
+
+frame_left_width  = 4
+frame_right_width  = 4
+chart_width_min  = 50
+chart_width_max  = 200
+chart_width_ref  = 60
+allow_scaling    = true
+
+chart_in_color       = #ffff00 # yellow
+chart_in_color_grid  = #ffffff # white
+chart_out_color      = #ffa500 # orange
+chart_out_color_grid = #ff0000 # red
+
+
+large_font = "-adobe-courier-medium-r-normal-*-*-120-*-*-m-*-iso8859-1"
+normal_font = "-adobe-courier-medium-r-normal-*-*-100-*-*-m-*-iso8859-1"
+small_font   = "-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1"
+
+rx_led_x = 4
+rx_led_y = 6
+tx_led_x = -4
+tx_led_y = 6
+
+StyleChart  *.border = 5,5,5,5
+
+StylePanel  *.border = 5,5,5,5          # Top border of 3 moves labels down.
+StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+
+
+StyleMeter  *.border = 3,3,3,3
+#StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+
+StyleMeter  fs.label_position = 0
+StyleMeter  mem.label_position = 100
+StyleMeter  swap.label_position = 100
+
+
+#alt2_color
+StyleChart  *.textcolor = #ffa500 #000000 shadow
+StyleChart  *.alt_textcolor = #ffa500 #000000 shadow
+
+#label_color
+StylePanel  *.textcolor = #ffffff #000000 shadow
+StyleMeter	cal.textcolor = #ffffff #000000 none
+
+#alt1_color
+StylePanel  *.alt_textcolor = #ffa500 #000000 shadow
+StyleMeter  host.textcolor = #ffa500 #000000 shadow
+
+#time_color
+StyleMeter  *.textcolor = #ffa500 #000000 shadow
+StyleMeter  *.alt_textcolor = #ffa500 #000000 shadow
+
+#meter_color
+StyleMeter	fs.textcolor = #ffffff #000000 none
+StyleMeter	mem.textcolor = #ffffff #000000 none
+StyleMeter	swap.textcolor = #ffffff #000000 none
+StyleMeter	mail.textcolor = #ffffff #000000 none

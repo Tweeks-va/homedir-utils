@@ -1,0 +1,6 @@
+StyleChart  *.textcolor = #e8e8e8 black shadow
+StyleChart  *.alt_textcolor = #e8e8e8 black shadow
+StylePanel  *.textcolor = #e8e8e8 black shadow
+StylePanel  *.alt_textcolor = #e8e8e8 black shadow
+StyleMeter  *.textcolor = #e8e8e8 black shadow
+StyleMeter  *.alt_textcolor = #e8e8e8 black shadow

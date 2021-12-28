@@ -1,0 +1,9 @@
+# gkrellmrc theme configuration file template.
+
+# Uncomment and modify configuration options in this file to change the
+# GKrellM defaults.  Uncomment means remove the '#' at the beginning of a
+# configuration line.
+
+# You can restrict the adjustment range allowed for chart width depending
+# on how LED's, labels, PPP timer/button etc. fit or look.
+

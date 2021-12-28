@@ -1,0 +1,37 @@
+author = "Dramen <dramen86@nycap.rr.com>
+
+theme_alternatives = 3
+
+
+rx_led_x = 1
+rx_led_y = 16
+tx_led_x = -1
+tx_led_y = 16
+
+StyleMeter  mem.label_position = 50
+StyleMeter  swap.label_position = 50
+StyleMeter  fs.label_position = 2
+StylePanel  net.label_position = 50
+
+#alt2_color
+StyleChart  *.textcolor = #da502b #000000 shadow
+StyleChart  *.alt_textcolor = #ffdc65 #000000 shadow
+
+#label_color
+StylePanel  *.textcolor = #ecdc92 #000000 shadow
+StyleMeter	cal.textcolor = #FFD882 #000000 shadow
+
+#alt1_color
+StylePanel  *.alt_textcolor = #ecdc92 #000000 shadow
+StyleMeter  host.textcolor = #FFD882 #000000 shadow
+
+#time_color
+StyleMeter  *.textcolor = #FFD882 #000000 shadow
+StyleMeter  *.alt_textcolor = #FFD882 #000000 shadow
+
+#meter_color
+StyleMeter	fs.textcolor = #ecdc92 #000000 shadow
+StyleMeter	mem.textcolor = #ecdc92 #000000 shadow
+StyleMeter	swap.textcolor = #ecdc92 #000000 shadow
+StyleMeter	mail.textcolor = #ecdc92 #000000 shadow
+StyleMeter	sensors.textcolor = #ffffff #a42500 shadow

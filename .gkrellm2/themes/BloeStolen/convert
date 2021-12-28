@@ -1,0 +1,20 @@
+#!/bin/bash
+echo " ... finding xpm files ..."
+for i in *.xpm
+do
+convert xpm:$i png:$i
+done
+for i in *.xpm; { mv $i $(echo $i | sed 's/xpm/png/'); }
+echo " .. conversion / moving done .."
+cp bg_spacer.png bg_meter_host.png
+test -e bg_panel.png || cp bg_spacer.png bg_panel.png
+test -e bg_meter.png || cp bg_bordered.png bg_meter.png
+test -e frame_left.png || cp frame_side.png frame_left.png 
+test -e frame_right.png || cp frame_side.png frame_right.png
+test -e frame_top.png || cp frame_horizontal.png frame_top.png ; mogrify -crop +0-2 frame_top.png
+test -e frame_bottom.png || cp frame_horizontal.png frame_bottom.png ; mogrify -crop +0+2 frame_bottom.png
+mv data_in_etch.png data_in_grid.png
+mv data_out_etch.png data_out_grid.png
+mv chart_grid.png bg_grid.png
+mv net_leds.png decal_net_leds.png
+mv decals.png decals_misc.png

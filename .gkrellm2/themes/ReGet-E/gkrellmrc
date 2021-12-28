@@ -1,0 +1,66 @@
+# gkrellmrc theme configuration file.
+author = "TaoX (brianh@pobox.com)"
+
+
+frame_left_width  = 3
+frame_right_width  = 3
+chart_width_min  = 60
+chart_width_max  = 200
+chart_width_ref  = 60
+allow_scaling    = true
+
+chart_in_color       = #eadc32
+chart_in_color_grid  = #735e11
+chart_out_color      = #e5d630
+chart_out_color_grid = #1e1601
+
+
+bg_grid_mode = 1
+
+large_font = -adobe-helvetica-bold-r-normal-*-12-100-*-*-p-*-iso8859-1
+normal_font = "-winfonts-vixar asci-bold-r-normal-*-*-120-*-*-p-*-iso8859-1"
+small_font   = -adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+
+rx_led_x = -16
+rx_led_y = 3
+tx_led_x = -2
+tx_led_y = 3
+
+#StyleChart  *.border = 3,3,2,2
+
+StylePanel  *.border = 4,4,4,4
+StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+#StylePanel  net.border = 0,0,3,0
+StylePanel  net.label_position = 0
+StylePanel  net.border = 2,2,6,2
+StylePanel  inet.border = 2,2,6,2
+
+
+StyleMeter  *.border = 2,2,2,2
+StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+#StyleMeter  mem.label_position = 100
+StyleMeter  mail.label_position = 70
+
+StyleMeter  fs.label_position = 0
+
+#alt2_color
+StyleChart  *.textcolor = #dadada #000000 shadow
+StyleChart  *.alt_textcolor = #dadada #000000 shadow
+
+#label_color
+StylePanel  *.textcolor = #ffffff #000000 shadow
+StyleMeter	cal.textcolor = #ffffff #000000 shadow
+
+#alt1_color
+StylePanel  *.alt_textcolor = #ffffff #000000 shadow
+StyleMeter  host.textcolor = #ffffff #000000 shadow
+
+#time_color
+StyleMeter  *.textcolor = #ffffff #000000 shadow
+StyleMeter  *.alt_textcolor = #ffffff #000000 shadow
+
+frame_top_border = 50,2,2,2
+frame_bottom_border = 3,3,1,1
+

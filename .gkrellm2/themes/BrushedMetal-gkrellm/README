@@ -1,0 +1,11 @@
+This is my theme for Gkrellm designed to go with the BrushedMetal-Tigert theme
+for Enlightenment 0.16.
+
+Installation:
+	
+	1 - Copy the file BrushedMetal-gkrellm.tar.gz in ~/.gkrellm 
+        2 - Cd to the directory ~/.gkrellm
+        3 - Untar the file
+
+|---[ Overkill (Riccardo Bartoli) ]-[ http://overkill.multinet.it/ ]----|
+             overkill@mail.multinet.it overkill@intelco.fi.it             

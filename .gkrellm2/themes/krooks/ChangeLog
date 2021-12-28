@@ -1,0 +1,34 @@
+--------------------------------------------------------------------------------
+                     ali.akcaagac@stud.fh-wilhelmshaven.de
+--------------------------------------------------------------------------------
+v0.0.8		- added a new meter for the new seti 0.7.0 plugin
+
+v0.0.7		- minor bugfix in the default_decals.
+
+v0.0.6		- updated this theme again, now i use the border options,
+		  which make styling even mire accurate. resized some meter
+		  panels and resized the top and bottom frames, now it places
+		  the left, right border correctly also the two pixel shadow
+		  as it used to be in the gtk and sawfish theme matches now.
+
+v0.0.5		- changed some default krells, now the little square button
+		  looks like the rest round buttons (e.g. inet0) and also the
+		  drive buttons have been adjusted to the round standart view.
+
+v0.0.4		- changed the timer and net buttons, now they look much better
+		  and fit better into the 'krooks' theme itself ;) lets see if
+		  they can do a much better gkrellm theme for that ;)
+
+v0.0.3		- fixed some issues where the charts going to be blue on heavy
+		  traffic. also changed the krell's for charts to be visible
+		  and for the last, i changed some minor aspects of that
+		  theme.
+
+v0.0.2		- due the fact that some eazel members dislike me using the
+		  name 'crux' for this theme and the fact that this theme
+		  seem to look terrible i decided to recreate that one again
+		  from scratch and here it is. i named this one 'krooks'.
+
+v0.0.1		- first public release because of the 'crux' theme for
+		  gtk and sawfish.
+--------------------------------------------------------------------------------

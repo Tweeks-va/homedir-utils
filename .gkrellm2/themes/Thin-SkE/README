@@ -1,0 +1,24 @@
+Thanks for downloading my theme.
+
+
+
+The images in the pixmaps directory were used for the GkrellM XMMS Plugin.
+
+They match the theme but I had to compile them in as there is no support 
+to automatically use them at this point. 
+
+If you like the Gkrellmms plugin you can recompile it with the images in the
+ pixmaps directory for a more smooth looking GkrellM. Just move the pixmaps
+ out of the way in the gkrellmms source tree and replace them with the ones 
+ included. Rebuild and reinstall the plugin and your set. The buttons will be 
+ used for all gkrellm themes.
+ 
+ You can see what gkrellmms looks like with my buttons, in the screenshot
+ for my E theme on e.themes.org.
+ 
+ If you don't have the plugin and are interested it is available here : 
+ http://www.cerebrus.demon.nl/gkrellm.
+ 
+ 
+ chavo
+ _chavo@bellsouth.net

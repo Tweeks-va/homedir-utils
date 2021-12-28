@@ -1,0 +1,38 @@
+
+
+frame_left_width  = 4
+frame_right_width  = 4
+
+chart_in_color       = #000000
+chart_in_color_grid  = #fff200
+chart_out_color      = #ffffff
+chart_out_color_grid = #0ff907
+
+
+large_font ="kates"
+normal_font ="shine"
+small_font = "nexus"
+bg_grid_mode = 1
+
+
+# Settings for the chart areas of all Chart monitors.
+StyleChart  *.border = 0,0,0,0
+StyleChart  *.font = normal_font
+StyleChart  *.alt_font = small_font
+StyleChart  *.textcolor = #efd097 #000000 shadow
+StyleChart  *.alt_textcolor = #d0d0d0 #181818 shadow
+
+# Settings for the panel areas of all Chart monitors.
+StylePanel  *.border = 0,0,2,2
+StylePanel  *.font = normal_font
+StylePanel  *.alt_font = normal_font
+StylePanel  *.textcolor = white #000000 shadow
+StylePanel  *.alt_textcolor = #b0e0b0 #000000 shadow
+StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+StylePanel  *.krell_x_hot = 3
+StylePanel  *.krell_depth = 4
+StylePanel  *.krell_yoff = 0
+
+
+

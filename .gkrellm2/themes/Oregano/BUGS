@@ -1,0 +1,1 @@
+- decal_net_led* do not scale very well for widths other than 60.

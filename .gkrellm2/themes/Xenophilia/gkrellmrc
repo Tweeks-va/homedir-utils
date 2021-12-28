@@ -1,0 +1,257 @@
+author = "Martin Man <martin.man@seznam.cz>"
+
+allow_scaling    = false
+
+# Frame sizes set to 0 means render frames to drawn dimension
+frame_top_height = 4
+frame_bottom_height = 4
+frame_left_width = 4
+frame_right_width = 4
+
+# Borders for images are specified with comma separated numbers in the order:
+#    left border, right border, top border, bottom border
+frame_bottom_border = 4,4,0,0
+frame_top_border = 4,4,0,0
+frame_left_border = 0,0,0,0
+frame_right_border = 0,0,0,0
+
+
+# Colors for drawing data on charts.  These apply to all chart monitors
+# so style settings for these are not possible.  These do not apply
+# if you have data_in/out images.
+chart_in_color       = #3b537a
+chart_in_color_grid  = #006290
+chart_out_color      = #7590bd
+chart_out_color_grid = #00805d
+
+# 0 (do) 1 (don't) draw the top/bottom grid lines on charts.
+bg_grid_mode = 0
+
+# Use this if you make a custom button_panel_in.png, button_panel_out.png
+button_panel_border = 1,1,1,1
+# Use this if you make a custom button_meter_in.png, button_meter_out.png
+button_meter_border = 1,1,1,1
+
+# Fonts to use in the Style settings below.
+large_font = -schumacher-clean-bold-r-normal-*-*-120-*-*-c-*-iso646.1991-irv
+normal_font = -schumacher-clean-medium-r-normal-*-*-100-*-*-c-*-iso646.1991-irv
+small_font   = -schumacher-clean-medium-r-normal-*-*-100-*-*-c-*-iso646.1991-irv
+
+# Placement of the Rx/Tx LEDs in the panel area of net Chart monitors.
+rx_led_x = 2
+rx_led_y = 1
+tx_led_x = -2
+tx_led_y = 1
+
+# ========= Style settings for the monitors. ============
+# Options can be set to apply globally to areas of all similar monitors,
+# or can be set to individually apply only to an area of a specific monitor.
+# This is done with Style lines which can have a global '*' scope name or a 
+# specific monitor name.  Since these theme specifications begin at
+# the monitor area level (see the Themes file), there are Style lines for
+# each area.  There are StyleChart and StylePanel lines for the chart and
+# panel areas in the Chart monitors, and a StyleMeter line for the single
+# meter area in the Meter monitors.
+# It is not necessary for these lines to be in any particular order, more
+# specific style settings always override a global setting.
+#   - textcolor arguments are  color, shadow color, and drawing effect
+#     (shadow or none). The '#' preceding the hex color values is required.
+#     Enclose multiple word rgb.txt color names in quotes.
+
+
+# -------- Global settings for Chart monitor chart areas -----------
+StyleChart *.border = 0,0,0,0
+StyleChart *.font = normal_font
+StyleChart *.alt_font = small_font
+
+
+# --------- Global settings for Chart monitor panels ---------------
+StylePanel *.border = 2,2,2,2
+StylePanel *.font = normal_font
+StylePanel *.alt_font = normal_font
+StylePanel *.label_position = 50
+StylePanel *.margin = 3
+StyleMeter *.top_margin = 2
+StyleMeter *.bottom_margin = 2
+StylePanel *.krell_yoff = 0
+# Don't change these settings unless you are making custom krell images.
+# StylePanel *.krell_x_hot = 3
+# StylePanel *.krell_depth = 4
+
+
+# -------- Global settings for meter monitor panels ------------
+StyleMeter *.border = 2,2,2,2
+StyleMeter *.font = normal_font
+StyleMeter *.alt_font = small_font
+StyleMeter *.label_position = 0
+StyleMeter *.margin = 2
+StyleMeter *.top_margin = 2
+StyleMeter *.bottom_margin = 3
+StyleMeter *.krell_yoff = 0
+# Don't change these settings unless you are making custom krell images.
+#StyleMeter *.krell_x_hot = 63
+StyleMeter *.krell_depth = 4
+
+
+# # ------ Custom settings for builtin meter monitors ------------
+# # These override any general '*' settings above.
+# 
+# StyleMeter apm.font = small_font
+# StyleMeter apm.border = 4,4,2,2
+# 
+# * cal.font and cal.textcolor is for day of week and month name
+# StyleMeter cal.font = small_font
+# # cal.alt_font is day of month
+# StyleMeter cal.alt_font = large_font
+# 
+# * clock.font and clock.textcolor is for hours & minutes
+# # clock.alt_font and clock.alt_textcolor would be used for seconds or am/pm
+# StyleMeter clock.font = large_font
+# 
+# StyleMeter fs.alt_font = normal_font
+# StyleMeter fs.border = 4,4,3,1
+# StyleMeter fs.label_position = 0
+# StyleMeter fs.top_margin = 2
+# StyleMeter fs.bottom_margin = 0
+# 
+# StyleMeter host.top_margin = 1
+# StyleMeter host.bottom_margin = 1
+# 
+# 
+# StyleMeter mem.alt_font = normal_font
+# StyleMeter mem.krell_yoff = 0
+# StyleMeter mem.bottom_margin = 1
+# set_integer mem_krell_buffers_yoff 0
+# set_integer mem_krell_buffers_depth 1
+# set_integer mem_krell_buffers_x_hot -1
+# set_integer mem_krell_cache_yoff 0
+# set_integer mem_krell_cache_depth 1
+# set_integer mem_krell_cache_x_hot -1
+# 
+# StyleMeter swap.alt_font = normal_font
+# # yoff of -2 bottom justifies the krell.
+# StyleMeter swap.krell_yoff = -2
+# 
+# # sensors settings affect the volt monitor.
+# StyleMeter sensors.top_margin = 3
+# StyleMeter sensors.bottom_margin = 3
+# # Border for the volt monitor extension image sensors/bg_volt:
+# set_image_border sensors_bg_volt 2,1,1,1
+# 
+# StyleMeter timer.margin = 1
+# StyleMeter timer.top_margin = 1
+# # Border for the net timer monitor extension image timer/bg_timer image:
+# set_image_border timer_bg_timer 1,1,2,2
+# 
+# StyleMeter uptime.border = 3,3,2,2
+# StyleMeter uptime.bottom_margin = 1
+# 
+# 
+# # ------------------------- Plugins ----------------------------------
+# # Always try looking at a plugins source tarball to see if it includes
+# # a "Themes" file describing how the plugin can be themed.  There may be
+# # custom images you can make or custom values you can set.
+# #
+# # ------- GkrellMMS ---------
+# spacer_top_height gkrellmms 3
+# spacer_bottom_height gkrellmms 3
+# StyleMeter gkrellmms.krell_yoff = 0
+# StyleMeter gkrellmms.margin = 2
+# # top_margin and bottom_margin should be recognized with gkrellmms 0.5.5
+# StyleMeter gkrellmms.top_margin = 2
+# StyleMeter gkrellmms.bottom_margin = 0
+# #
+# # GKrellMMS has a theme extension for its scrolling text panel.  It can
+# # have a separate background image gkrellmms/bg_scroll.png. Set its border:
+# set_image_border gkrellmms_bg_scroll 3,3,2,2
+# # And to set the margins for the scroll panel (gkrellmms 0.5.5 or better):
+# set_integer gkrellmms_scroll_margin 2
+# set_integer gkrellmms_scroll_top_margin 2
+# set_integer gkrellmms_scroll_bottom_margin 2
+# 
+# 
+# # ------- GkrellMSS ---------
+# set_integer sound_button_sweep_yoff 3
+# set_integer sound_krell_vu_depth 1
+# set_integer sound_krell_vu_x_hot 59
+# set_integer sound_krell_vu_expand 1
+# set_integer sound_krell_vu_left_yoff 3
+# set_integer sound_krell_vu_right_yoff 9
+# set_integer sound_krell_vu_peak_depth 5
+# set_integer sound_krell_vu_peak_x_hot -1
+# set_integer sound_krell_vu_peak_left_yoff 2
+# set_integer sound_krell_vu_peak_right_yoff 8
+# set_integer sound_krell_sensitivity_depth 1
+# set_integer sound_krell_sensitivity_x_hot -1
+# set_integer sound_krell_sensitivity_y_up -10
+# set_integer sound_krell_sensitivity_y_dn 2
+# 
+# 
+# # -------- GKrellM-PMU ---------
+# spacer_top_height pmu 3
+# spacer_bottom_height pmu 2
+# 
+# 
+# # --------- Timers (don't confuse with builtin "timer" -------------
+# spacer_top_height timers 3
+# spacer_bottom_height timers 3
+# StyleMeter timers.border = 6,6,2,2
+# StyleMeter timers.top_margin = 2
+# StyleMeter timers.bottom_margin = 2
+# StyleMeter timers.font = large_font
+# 
+# # --------- Volume -------------
+# spacer_top_height volume 3
+# spacer_bottom_height volume 3
+# StyleMeter volume.label_position = 0
+# StyleMeter volume.border = 26,3,1,1
+# StyleMeter volume.top_margin = 1
+# StyleMeter volume.bottom_margin = 0
+
+
+# --------------------- Text Colors --------------------------
+StyleChart *.textcolor = #333333 #000000 none
+StyleChart *.alt_textcolor = #dddddd #000000 none
+
+StylePanel *.textcolor = #333333 #000000 none
+StylePanel *.alt_textcolor = #dddddd #000000 none
+
+StyleMeter *.textcolor = #333333 #000000 none
+StyleMeter *.alt_textcolor = #dddddd #000000 none
+
+# StyleMeter cal.textcolor = #c8e4e2 #000000 shadow
+# StyleMeter clock.textcolor =  #e8e4d2 #000000 shadow
+# StyleMeter clock.alt_textcolor = #c8e4e2 #000000 shadow
+# 
+# StyleMeter host.textcolor = #c8d4d2 #000000 shadow
+# 
+# StyleMeter mail.alt_textcolor = #ffc0c0 #000000 shadow
+# 
+# StyleMeter fs.alt_textcolor = #c8e4e2 #000000 shadow
+# StyleMeter mem.alt_textcolor = #c8e4e2 #000000 shadow
+# StyleMeter swap.alt_textcolor = #c8e4e2 #000000 shadow
+# 
+# StyleMeter sensors.textcolor = #60fff0 #000000 shadow
+# StyleMeter sensors.alt_textcolor = #c8e4e2 #000000 shadow
+# 
+# StyleMeter timer.textcolor = #e8e4d2 #000000 shadow
+# StyleMeter timer.alt_textcolor = #c8e4e2 #000000 shadow
+# 
+# StyleMeter uptime.textcolor = #e8e4d2 #000000 shadow
+# 
+# StyleMeter gkrellmms.alt_textcolor = black #dcdccc shadow
+# 
+# StyleMeter timers.textcolor = #d8e4d2 #000000 shadow
+# StyleMeter timers.alt_textcolor = #c8e4e2 #000000 shadow
+# 
+# 
+# --------------------- Other Special Setting -----------------------------
+# Don't change these settings unless you make custom mail panel animations:
+# ----- If you make an animated penguin:  mail/krell_penguin.png
+# StyleMeter mail.krell_depth = 15
+# StyleMeter mail.krell_yoff = 0
+# StyleMeter mail.krell_x_hot = -1
+# StyleMeter mail.label_position = 70"
+# ----- If you make an animated envelope:  mail/decal_mail.png
+# decal_mail_frames = 18
+# decal_mail_delay = 1

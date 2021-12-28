@@ -1,0 +1,35 @@
+author = "n0l0G1k <n0l0g1k@sdf.lonestar.org> Http://n0l0g1k.aspekt.net"
+
+frame_top_height			=	3
+frame_bottom_height			=	3
+frame_left_width			=	3
+frame_right_width			=	3
+
+chart_in_color				=	#000000
+chart_in_color_grid			=	#f5f5f5
+chart_out_color				=	#f4f4f5
+chart_out_color_grid		=	#f4f400
+
+bg_grid_mode				=	1
+
+large_font				=	nexus
+normal_font				=	nexus
+small_font				=	nexus
+
+rx_led_y				=	3
+tx_led_y				=	3
+
+StyleChart	*.textcolor		=	#000000 #ffffff shadow
+StyleChart	*.alt_textcolor		=	#000000 #ffffff shadow
+StyleChart	*.border		=	2, 2, 2, 2
+StyleChart	*.krell_depth		=	1
+
+StylePanel	*.textcolor		=	#000000 #ffffff shadow
+StylePanel	*.alt_textcolor		=	#000000 #ffffff shadow
+StylePanel	*.border		=	2, 2, 2, 2
+StylePanel	*.krell_depth		=	1
+
+StyleMeter	*.textcolor		=	#000000 #ffffff shadow
+StyleMeter	*.alt_textcolor		=	#000000 #ffffff shadow
+StyleMeter	*.border		=	2, 2, 2, 2
+StyleMeter	*.krell_depth		=	1

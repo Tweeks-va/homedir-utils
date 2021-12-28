@@ -1,0 +1,23 @@
+Recomended geometry 60x60
+
+If you have the tahoma font I would recomend using these lines in the main gkrellmrc:
+large_font = -ttf-tahoma-bold-r-normal-*-10-*-*-*-p-*-iso8859-1
+normal_font = -ttf-tahoma-medium-r-normal-*-10-*-*-*-p-*-iso8859-1
+small_font = -ttf-tahoma-medium-r-normal-*-9-*-*-*-p-*-iso8859-1
+
+Also I like this as the contents of my ~/.eazel-engine-color (if you are running the Crux gtk theme):
+#616e62
+
+or
+#879fa1
+
+Lastly the ~/.gnome/Background:
+[Default]
+color1=#596055
+color2=#9cac87
+Enabled=true
+simple=gradient
+gradient=horizontal
+wallpaper=none
+wallpaperAlign=0
+wallpapers=0

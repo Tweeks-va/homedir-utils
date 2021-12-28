@@ -1,0 +1,58 @@
+author = "Chris Carey <chris@sublimespot.com>""
+
+frame_left_width  = 3
+frame_right_width  = 3
+
+chart_in_color       = #20BE25
+chart_in_color_grid  = #DCF916
+chart_out_color      = #DCF916
+chart_out_color_grid = #BDD6B4
+
+bg_grid_mode = 0
+
+large_font = -adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+normal_font = -adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+small_font   = -adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+
+rx_led_x = 3
+rx_led_y = 8
+tx_led_x = -3
+tx_led_y = 8
+
+StyleChart  *.border = 3,3,2,2
+StylePanel  *.border = 2,2,2,3
+StylePanel  *.margin = 2
+
+StyleMeter  *.margin = 3
+StyleMeter  *.border = 2,2,4,4
+StyleMeter  *.label_position = 0
+StyleMeter  fs.label_position = 0
+
+#alt2_color
+StyleChart  *.textcolor = #577498
+StyleChart  *.alt_textcolor = #577498
+
+#label_color
+StylePanel  *.textcolor = #577498
+StyleMeter	cal.textcolor = #D0E5FA
+
+#alt1_color
+StylePanel  *.alt_textcolor = #577498
+StyleMeter  host.textcolor = #D0E5FA
+
+#time_color
+StyleMeter  *.textcolor = #FFFFFF
+StyleMeter  *.alt_textcolor = #D0E5FA
+
+#meter_color
+StyleMeter	fs.textcolor =  #577498
+StyleMeter	mem.textcolor = #000000
+StyleMeter	swap.textcolor = #000000
+StyleMeter	mail.textcolor = #FFFFFF
+
+StyleMeter	volume.margin = 0
+StyleMeter	gkrellmms.margin = 0
+
+krell_slider_x_hot = 0
+
+krell_slider_depth = 1

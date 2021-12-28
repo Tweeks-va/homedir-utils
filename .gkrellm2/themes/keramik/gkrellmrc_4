@@ -1,0 +1,28 @@
+author = "SkyShadow"
+
+
+#81B3FF
+chart_in_color       = #bbffbb
+chart_in_color_grid  = #00a3a3
+chart_out_color      = #7895FF
+chart_out_color_grid = #b47c20
+
+large_font = -adobe-helvetica-medium-r-*-*-*-100-*-*-*-*-iso8859-*
+normal_font = -adobe-helvetica-medium-r-*-*-*-100-*-*-*-*-iso8859-*
+small_font   = -adobe-helvetica-medium-r-*-*-*-90-*-*-*-*-iso8859-*
+
+StyleChart      *.transparency = 0
+StyleChart *.textcolor = #bbffbb #000000 shadow
+StyleChart *.alt_textcolor = #ffffff #000000 shadow
+
+StylePanel *.textcolor = #000000 #ffffff shadow
+StylePanel *.alt_textcolor = #000000 #ffffff shadow
+
+StyleMeter *.textcolor =  #000000 #ffffff shadow
+StyleMeter *.alt_textcolor = #000000 #ffffff shadow
+StyleMeter  host.textcolor  = #000000 #B9B9B9 shadow
+
+#3C8DE5
+#8BC1FF
+#7895FF
+#BEF4FF

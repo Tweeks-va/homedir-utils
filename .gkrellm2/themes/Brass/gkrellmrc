@@ -1,0 +1,32 @@
+
+large_font = "-adobe-courier-medium-r-normal-*-*-120-*-*-m-*-iso8859-1"
+normal_font = "-adobe-courier-medium-r-normal-*-*-100-*-*-m-*-iso8859-1"
+small_font   = "-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1"
+
+rx_led_x = -10
+rx_led_y = 0
+tx_led_x = -1
+tx_led_y = 0
+
+StyleChart  *.border = 0,0,0,0
+StyleChart  *.textcolor = #68f22c #000000 shadow
+StyleChart  *.alt_textcolor = #68f22c #000000 shadow
+
+
+StylePanel  *.border = 0,0,3,1          # Top border of 3 moves labels down.
+StylePanel  *.textcolor = #ede6ef #000000 shadow
+StylePanel  *.alt_textcolor = #ffeac4 #000000 shadow
+StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+StylePanel  net.label_position = 35
+
+StylePanel	net.border = 0,0,3,0
+
+StyleMeter  *.border = 3,3,3,3
+StyleMeter  *.textcolor = #ffeac4 #000000 shadow
+StyleMeter  *.alt_textcolor = #ffeac4 #000000 shadow
+StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+StyleMeter  cal.textcolor = #ede6ef #000000 shadow
+
+StyleMeter  host.textcolor = #ffeac4 #000000 shadow

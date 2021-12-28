@@ -1,0 +1,89 @@
+#!/usr/bin/perl
+my @panels =  ("cpu","proc","disk","net","inet");
+my @formats = ("png","jpg","jpeg","gif","xpm");
+my @krells = ("mem","fs","mail","apm","uptime","clock","cal","timer","host","swap");
+
+foreach my $panel (@panels) {
+	foreach my $format (@formats) {		
+		foreach my $file (get_files("bg_panel_$panel",$format)) {
+			mkdir($panel,0755);
+			$suffix = get_suffix($file);
+			system("mv ". $file . " $panel/bg_panel.".$format) if (!$suffix);
+			system("mv ". $file . " $panel/bg_panel_".$suffix.".".$format) if ($suffix);
+		}	
+		
+		foreach my $file (get_files("krell_panel_$panel",$format)) {
+			mkdir($panel,0755);
+			$suffix = get_suffix($file);
+			system("mv ". $file . " $panel/krell.".$format) if (!$suffix);
+			system("mv ". $file . " $panel/krell_".$suffix.".".$format) if ($suffix);
+		}	
+	}
+}
+
+foreach my $krell (@krells) {
+	foreach my $format (@formats) {
+		
+		foreach my $file (get_files("bg_meter_$krell",$format)) {
+			mkdir($krell,0755);
+			$suffix = get_suffix($file);
+			system("mv ". $file . " $krell/bg_panel.".$format) if (!$suffix);
+			system("mv " . $file . " $krell/bg_panel_".$suffix.".".$format) if ($suffix);
+		}
+		
+		foreach my $file (get_files("krell_meter_$krell",$format)) {
+			mkdir($krell,0755);
+			$suffix = get_suffix($file);
+			system("mv ". $file . " $krell/krell.".$format) if (!$suffix);
+			system("mv ". $file . " $krell/krell_".$suffix.".".$format) if ($suffix);
+		}
+	}
+}
+
+if (-e "decal_net_leds.png") {
+	mkdir("net",0755);
+	system("mv decal_net_leds* net/");
+}
+if (-e "decal_timer_button.png") {
+	mkdir("timer",0755);
+	system("mv decal_timer_button* timer/");
+}	
+if (-e "bg_timer.png") {
+	mkdir("timer",0755);
+	system("mv bg_timer* timer/");
+}
+
+#if (-e "bg_meter_timerbutton") {
+#	mkdir("timer",0755);
+#	system("mv bg_meter_timerbutton.png timer/bg_panel.png");
+#}
+
+
+
+sub get_suffix
+{
+	my ($f) = @_;
+	$s = $f;
+	$s=~ s/(.*)_//g;
+	$s=~ s/\.(.*)//g;
+	if ($s =~ /^\d+$/) {			
+		return $s;
+	} else {
+		return undef;
+	}	
+}	
+
+sub get_files
+{
+	my ($lookfor,$type) = @_;
+	opendir(DIR,"./");
+	my @returns = ();
+	while (defined (my $f=readdir DIR)) {
+		next if $f =~ /^\.\.?$/;
+		push @returns, $f if ($f =~ /$lookfor(.*)\.$type/g);
+       	}
+	closedir(DIR);	
+	if (!@returns) { return (); }
+	return @returns;
+		
+}	

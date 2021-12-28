@@ -1,0 +1,25 @@
+chart_grid_mode = 1
+frame_width  = 4
+chart_width  = 56
+chart_height = 60
+
+meter_border = 3,3,2,2
+timer_border = 3,3,2,2
+label_border = 2,2,2,2
+chart_border = 2,2,2,2
+
+# scaling..
+#ppp_bytes_per_grid  = 2000     // Maybe good for a 33.6k - 56k modem
+#plip_bytes_per_grid = 5000
+#eth0_bytes_per_grid = 20000   // Cable modem?
+#eth1_bytes_per_grid = 20000
+#eth2_bytes_per_grid = 20000
+
+chart_grid_mode = 1
+
+chart_in_color       = #666677
+chart_in_color_grid  = #555555
+chart_out_color      = #9999aa
+chart_out_color_grid = #888888
+
+

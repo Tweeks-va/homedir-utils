@@ -1,0 +1,60 @@
+author = "xinit <xinit@null.net>"
+
+
+frame_left_width  = 4
+frame_right_width  = 4
+
+chart_in_color       = #cc0000
+chart_in_color_grid  = #ffff66
+chart_out_color      = #448800
+chart_out_color_grid = #ffff66
+
+
+
+bg_grid_mode = 0
+
+large_font = "-monotype-andale mono-medium-r-normal--17-120-100-100-m-100-koi8-ru"
+normal_font = "-monotype-andale mono-medium-r-normal--15-110-100-100-m-90-koi8-ru"
+small_font   = "-monotype-andale mono-medium-r-normal--12-90-100-100-m-80-koi8-ru"
+
+
+
+rx_led_x = 3
+rx_led_y = 8
+tx_led_x = -3
+tx_led_y = 8
+
+
+
+StyleChart  *.border = 3,3,2,2
+
+StylePanel  *.border = 2,2,2,3
+#StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+#StylePanel  net.border = 0,0,3,0
+#StylePanel  net.label_position = 35
+
+
+StyleMeter  *.border = 2,2,4,4
+#StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+#StyleMeter  mem.label_position = 100
+#StyleMeter  swap.label_position = 100
+
+StyleMeter  fs.label_position = 0
+
+#alt2_color
+StyleChart  *.textcolor = #000000 #ffffff noshadow
+StyleChart  *.alt_textcolor = #000000 #ffffff noshadow
+
+#label_color
+StylePanel  *.textcolor = #ffffff  #ffffff noshadow
+StyleMeter	cal.textcolor = #000000 #ffffff noshadow
+
+#alt1_color
+StylePanel  *.alt_textcolor = #000000 #ffffff noshadow
+StyleMeter  host.textcolor = #000000 #ffffff noshadow
+
+#time_color
+StyleMeter  *.textcolor = #000000 #ffffff noshadow
+StyleMeter  *.alt_textcolor = #000000 #ffffff noshadow

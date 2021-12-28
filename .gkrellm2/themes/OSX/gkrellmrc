@@ -1,0 +1,52 @@
+author = "Steven Ponsford sponsfor@ix.netcom.com"
+
+
+frame_left_width  = 4
+frame_right_width  = 4
+
+large_font = -adobe-helvetica-medium-r-normal-*-*-100-*-*-p-*-iso8859-1
+normal_font = -adobe-helvetica-medium-r-normal-*-*-100-*-*-p-*-iso8859-1
+small_font   = -adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+
+
+
+rx_led_x = 0
+rx_led_y = 0
+tx_led_x = -1
+tx_led_y = 0
+
+StyleChart  *.border = 0,0,0,0
+
+#StylePanel  *.border = 3,3,2,2 
+#StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+StylePanel  net.border = 0,0,3,0
+
+
+#StyleMeter  *.border = 2,2,3,3
+#StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+
+StyleMeter  fs.label_position = 0
+
+#alt2_color
+StyleChart  *.textcolor = #ffcf30 #000000 shadow
+StyleChart  *.alt_textcolor = #ffcf30 #000000 shadow
+
+#label_color
+StylePanel  *.textcolor = #00008f #000000 none
+StyleMeter	cal.textcolor = #00008f #000000 none
+
+#alt1_color
+StylePanel  *.alt_textcolor = #3030ff #000000 none
+StyleMeter  host.textcolor = #3030ff #000000 none
+
+#time_color
+StyleMeter  *.textcolor = #000060 #000000 none
+StyleMeter  *.alt_textcolor = #000060 #000000 none
+
+#meter_color
+StyleMeter	fs.textcolor = #404040 #000000 none
+StyleMeter	mem.textcolor = #404040 #000000 none
+StyleMeter	swap.textcolor = #404040 #000000 none
+StyleMeter	mail.textcolor = #404040 #000000 none

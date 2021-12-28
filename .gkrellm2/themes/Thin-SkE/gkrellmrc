@@ -1,0 +1,66 @@
+# gkrellmrc theme configuration file template.
+
+# Label font and colors set here.  The alt_font is for miscellaneous
+# extra labelling and should be a smaller font than the label_font.
+# The alt1_color will be for alt_font draws on panel backgrounds
+# while alt2_color will be for draws in the bg_chart area.
+# The large font is used for clock/calendar digits and uses time_color.
+
+author = "chavo _chavo@bellsouth.net"
+
+
+large_font =   -b&h-lucida-bold-r-normal-*-*-100-*-*-p-*-iso8859-1
+normal_font =  -b&h-lucida-bold-r-normal-*-*-100-*-*-p-*-iso8859-1
+small_font   =  -b&h-lucida-bold-r-normal-*-*-100-*-*-p-*-iso8859-1
+
+#bordered_border = 4,4,4,4
+frame_top_border = 2,2,2,2
+frame_bottom_border = 5,5,2,2
+frame_right_width 4
+frame_left_width 4
+#frame_top_height 6
+
+rx_led_x = 0
+rx_led_y = 0
+tx_led_x = -1
+tx_led_y = 0
+
+
+# Label values are center, none, or a number between 0-100 which is the label
+# midpoint as a percent of the chart width. So, center is equivalent to 50.
+# Typical use would be to set chart.net.label to 30 or 40 if you want to
+# have room to place both rx and tx leds to the right of the label.
+        StyleChart  *.border = 0,0,0,0
+        StyleChart  *.font = normal_font
+        StyleChart  *.alt_font = small_font
+        StyleChart  *.textcolor = #69d0ff #000000 none
+        StyleChart  *.alt_textcolor = #fffffff #000000 none
+
+        StylePanel  *.border = 0,0,3,3
+        StylePanel  *.font = normal_font
+        StylePanel  *.alt_font = normal_font
+        StylePanel  *.textcolor = #000000 #000000 none
+        StylePanel  *.alt_textcolor = #000000 #000000 none
+        StylePanel  *.label_position = 50
+        StyleMeter  *.margin = 3
+        StylePanel  *.krell_x_hot = 3
+        StylePanel  *.krell_depth = 4
+        StylePanel  *.krell_yoff = 0
+
+        StyleMeter  *.border = 3,3,3,2
+        StyleMeter  *.font = normal_font
+        StyleMeter  *.alt_font = small_font
+        StyleMeter  *.textcolor = #000000 #000000 none
+        StyleMeter  *.alt_textcolor = #000000 #000000 none
+        StyleMeter  *.label_position = 50
+        StyleMeter  *.margin = 3
+        StyleMeter  *.krell_x_hot = -1                  # -1 means center it
+        StyleMeter  *.krell_depth = 1
+        StyleMeter  *.krell_yoff = 1
+         StyleMeter cal.border = 3,3,4,4
+         StyleMeter clock.border = 3,3,4,4
+         StyleMeter uptime.border = 3,3,4,4
+         StyleMeter timer.border = 3,3,5,5
+        StyleMeter  mem.label_position = 100
+        StyleMeter  swap.label_position = 100
+        StyleMeter  fs.label_position = 0

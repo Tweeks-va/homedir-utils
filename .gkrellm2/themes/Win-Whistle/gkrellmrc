@@ -1,0 +1,29 @@
+author = Mike Osborne <egggman@penguinpowered.com>
+
+theme_alternatives = 0
+
+frame_top_border = 6,6,0,0
+frame_bottom_border = 6,6,0,0
+
+normal_font = -b&h-lucida-bold-r-normal-*-*-100-*-*-p-*-iso8859-1
+large_font  = -b&h-lucida-bold-r-normal-*-*-100-*-*-p-*-iso8859-1 
+small_font  = -b&h-lucida-bold-r-normal-*-*-100-*-*-p-*-iso8859-1
+
+StyleMeter  *.border = 3,3,2,2
+
+bg_grid_mode = 1
+
+StylePanel  net.label_position = 30
+rx_led_x = 45
+rx_led_y = 4
+tx_led_x = 45
+tx_led_y = 12
+
+StyleChart  *.textcolor = white black shadow
+StyleChart  *.alt_textcolor = white black shadow
+StyleChart  *.font = small_font
+StylePanel  *.textcolor = white black shadow
+StylePanel  *.alt_textcolor = white black shadow
+StyleMeter  *.textcolor = white black shadow
+StyleMeter  *.alt_textcolor = white black shadow
+StyleMeter  fs.font = small_font

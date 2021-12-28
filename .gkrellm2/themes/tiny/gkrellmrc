@@ -1,0 +1,59 @@
+author = "egggman <egggman@muhri.net>"
+
+
+frame_left_width  = 4
+frame_right_width  = 4
+
+chart_in_color       = #2c2cc1
+chart_in_color_grid  = #7ec2cc
+chart_out_color      = #b7b7b7
+chart_out_color_grid = #666666
+
+bg_grid_mode = 1
+
+large_font = -*-lucida-medium-r-normal-*-*-120-*-*-p-*-iso8859-1
+normal_font = -*-lucida-medium-r-normal-*-*-100-*-*-p-*-iso8859-1
+small_font   = -*-lucida-medium-r-normal-*-*-100-*-*-p-*-iso8859-1
+
+
+
+rx_led_x = 43
+rx_led_y = 4
+tx_led_x = 43
+tx_led_y = 12
+
+
+
+StyleChart  *.border = 3,3,2,2
+
+StylePanel  *.border = 2,2,2,3
+#StylePanel  *.label_position = 50
+StylePanel  *.margin = 3
+#StylePanel  net.border = 5,5,5,5
+StylePanel  net.label_position = 00
+
+
+StyleMeter  *.border = 2,2,4,4
+#StyleMeter  *.label_position = 50
+StylePanel  *.margin = 3
+StyleMeter  mem.label_position = 100
+StyleMeter  swap.label_position = 100
+
+StyleMeter  fs.label_position = 0
+
+#alt2_color
+StyleChart  *.textcolor = #000000 #ffffff none
+StyleChart  *.alt_textcolor = #000000 #ffffff none
+
+#label_color
+StylePanel  *.textcolor = #000000 #ffffff none
+StyleMeter	cal.textcolor = #000000 #ffffff none
+
+#alt1_color
+StylePanel  *.alt_textcolor = #000000 #ffffff none
+StyleMeter  host.textcolor = #000000 #ffffff none
+
+#time_color
+StyleMeter  *.textcolor = #000000 #ffffff none
+StyleMeter  *.alt_textcolor = #000000 #ffffff none
+

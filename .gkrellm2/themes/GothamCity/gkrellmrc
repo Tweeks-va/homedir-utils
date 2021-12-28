@@ -1,0 +1,131 @@
+author = "Dramen <dramen86@nycap.rr.com>"
+
+theme_alternatives = 3
+bg_grid_mode = 1
+#bg_separator_height = 2
+#allow_scaling = 1
+
+# Frame Dimensions
+frame_left_width  = 4
+frame_right_width  = 4
+frame_top_height  = 4
+frame_bottom_height  = 4
+
+# Fonts
+large_font = "-urw-avantgarde-demibold-r-normal-*-*-120-*-*-p-*-iso8859-2"
+normal_font = "-urw-avantgarde-demibold-r-normal-*-*-110-*-*-p-*-iso8859-2"
+small_font = "-urw-avantgarde-demibold-r-normal-*-*-100-*-*-p-*-iso8859-2"
+
+
+# Net Led Positions
+rx_led_x = 1
+rx_led_y = 16
+tx_led_x = -1
+tx_led_y = 16
+
+
+# Control the chart width
+#chart_width_min  = 64
+#chart_width_max  = 64
+#chart_width_ref  = 64
+
+# Margins and Borders
+# Borders are specified with comma separated numbers in the order:
+#   left border, right border, top border, bottom border
+# Margins are single number value
+StyleChart  *.margin = 3
+StylePanel  *.margin = 3
+StyleMeter  *.margin = 3
+StyleChart  *.border = 3,3,3,3
+#StylePanel  *.border = 3,3,12,6
+StylePanel  cpu.border = 3,3,12,6
+StylePanel  proc.border = 3,3,12,6
+StylePanel  disk.border = 3,3,12,6
+StylePanel  net.border = 3,3,12,6
+StylePanel  inet.border = 3,3,12,6
+StyleMeter  *.border = 2,2,12,4
+StyleMeter  host.border = 2,2,5,5
+StyleMeter  cal.border = 2,2,4,4
+StyleMeter  clock.border = 2,2,4,4
+StyleMeter  sensors.border = 2,2,8,8
+StyleMeter  mem.border = 2,2,12,6
+StyleMeter  swap.border = 2,2,12,6
+StyleMeter  volume.border = 2,2,12,8
+StyleMeter  uptime.border = 2,2,5,5
+
+#bg_slider_panel_border = 1,1,1,1
+#bg_slider_meter_border = 1,1,1,1
+
+# Krell Adjustments
+StylePanel  *.krell_x_hot      = 63
+StylePanel  *.krell_depth      = 65
+StylePanel  *.krell_yoff       = 4
+StyleMeter  *.krell_x_hot 	= 63
+StyleMeter  *.krell_depth 	= 65
+StyleMeter  *.krell_yoff 	= 4
+StyleMeter  mail.krell_x_hot 	= -1
+krell_slider_depth 		= 65
+krell_slider_x_hot 		= 63
+
+# GKrellMMS config
+# Settings for the scrolling title panel:
+#StyleMeter gkrellmms.alt_textcolor = black #dcdccc shadow
+
+# If there is a separate bg_scroll image:
+#set_image_border gkrellmms_bg_scroll 3,3,2,2
+# Set margins around the scrolling text.  This panel uses extensions to the
+# base GKrellMMS style settings and these extensions are implemented
+
+# GKrellMMS using set_integer:
+#set_integer gkrellmms_scroll_margin 2
+#set_integer gkrellmms_scroll_top_margin 2
+#set_integer gkrellmms_scroll_bottom_margin 2
+
+# Settings for the time bar and button bar panels.  These all use the base
+# GKrellMMS style and are set in the standard way:
+#StyleMeter gkrellmms.textcolor = #ffeac4 #000000 shadow
+#StyleMeter gkrellmms.border = 30,3,2,0
+#StyleMeter gkrellmms.margin = 4
+#StyleMeter gkrellmms.top_margin = 4
+#StyleMeter gkrellmms.bottom_margin = 0
+
+
+# Label Positions
+StyleMeter  volume.label_position = 0
+StyleMeter  mem.label_position = 50
+StyleMeter  swap.label_position = 50
+StyleMeter  fs.label_position = 2
+StylePanel  net.label_position = 50
+
+# Label and Text Colors
+
+#alt2_color
+StyleChart  *.textcolor = #CB69FF #000000 shadow
+StyleChart  *.alt_textcolor = #8C75FB #000000 shadow
+
+#label_color
+StylePanel  *.textcolor = #ecdc92 #000000 shadow
+StyleMeter	cal.textcolor = #FFD882 #000000 shadow
+
+#alt1_color
+StylePanel  *.alt_textcolor = #ecdc92 #000000 shadow
+StyleMeter  host.textcolor = #FFD882 #000000 shadow
+
+#time_color
+StyleMeter  *.textcolor = #FFD882 #000000 shadow
+StyleMeter  *.alt_textcolor = #FFD882 #000000 shadow
+
+#meter_color
+StyleMeter	fs.textcolor = #ecdc92 #000000 shadow
+StyleMeter	mem.textcolor = #ecdc92 #000000 shadow
+StyleMeter	swap.textcolor = #ecdc92 #000000 shadow
+StyleMeter	mail.textcolor = #ecdc92 #000000 shadow
+StyleMeter	sensors.textcolor = #ffdb92 #000000 shadow
+
+
+
+
+
+
+
+

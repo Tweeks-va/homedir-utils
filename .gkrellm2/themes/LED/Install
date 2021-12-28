@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#Author: Dexter Fryar
+#Email: Dexter.Fryar@Compaq.com
+#Date: 11/17/1999
+
+# This is a modified version of the default script.
+
+# Install the gkrellmrc, gkrellm_theme.cfg, and example theme files in your
+# ~/.gkrellm directory.  Run this script as the user who runs X.
+
+mkdir -p ~/.gkrellm/LED
+
+cp gkrellm_theme.cfg ~/.gkrellm
+cp gkrellmrc ~/.gkrellm/LED
+
+cp *.xpm *.png ~/.gkrellm/LED
+
+exit 0

@@ -1,0 +1,30 @@
+author					=	"Christophe Jauffret <tux@mac.com> hack from krooks"
+
+frame_left_width			=	4
+frame_right_width			=	4
+
+chart_in_color				=	#43429c
+chart_in_color_grid			=	#37585a
+chart_out_color				=	#43429c
+chart_out_color_grid			=	#37585a
+
+bg_grid_mode				=	1
+
+large_font				=	-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+normal_font				=	-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+small_font				=	-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1
+
+rx_led_y				=	3
+tx_led_y				=	3
+
+StyleChart	*.textcolor		=	#000000 #ffffff shadow
+StyleChart	*.alt_textcolor		=	#000000 #ffffff shadow
+StyleChart	*.krell_depth		=	1
+
+StylePanel	*.textcolor		=	#000000 #ffffff shadow
+StylePanel	*.alt_textcolor		=	#000000 #ffffff shadow
+StylePanel	*.krell_depth		=	1
+
+StyleMeter	*.textcolor		=	#000000 #ffffff shadow
+StyleMeter	*.alt_textcolor		=	#000000 #ffffff shadow
+StyleMeter	*.krell_depth		=	1
