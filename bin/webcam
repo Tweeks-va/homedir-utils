@@ -1,0 +1,24 @@
+#!/bin/bash
+
+export VARS="$@ -zoom -pvr aspect=3 "
+
+##echo command=$0
+if [[ $0 == *webcam0 ]]; then
+	export DEVICE=/dev/video0
+	##echo okay0
+fi
+if [[ $0 == *webcam1 ]]; then
+	export DEVICE=/dev/video1\
+	##echo okay1
+fi
+if [[ $0 == *webcam2 ]]; then
+	export DEVICE=/dev/video2
+	##echo okay2
+fi
+if [[ $0 == *webcam3 ]]; then
+	export DEVICE=/dev/video3
+	##echo okay3
+fi
+
+
+mplayer tv:// -tv driver=v4l2:device=$DEVICE -vo x11 $VARS >/dev/null  2>&1

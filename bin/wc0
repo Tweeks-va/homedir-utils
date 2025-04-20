@@ -1,3 +1,0 @@
-#!/bin/bash
-
-mplayer tv:// --tv=device=/dev/video0

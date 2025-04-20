@@ -1,0 +1,126 @@
+#!/bin/bash
+
+## This tag will be seen in your logs.. might want to obfuscate (or not log)
+export TAG=trash
+
+## SMS Texting API & Phone Number Settings, overwritten by .cfg file (below)
+SMSENDPOINT='https://textbelt.com/text'
+#SMSAPIKEY="1c0c42f399ab5c0e135f2cb36d5c736e8a20f2898k7BEV9xo2078l7nS5T2z311b" ## dummy example API key
+SMSAPIKEY=""
+SMSPHONE='8005551212'		## My mobile#
+## If API key = "", notificaitons is logs only.. to set up SMS, set up variables
+## above, or see ~/bin/hbban.cfg (which get sourced)
+
+
+## Internal configs
+export BIN=/root/bin
+export CFG=/root/bin/hbban.cfg
+export SCANDIR=/root/.config/hbban
+export STATUS="0"
+
+
+## ANSI COLORS
+export RED='\033[0;31m'
+export GREEN='\033[0;32m'
+export NC='\033[0m' 
+
+## Setup configs
+. $CFG 	# overrides SMS settings above
+## Detect SMS or no SMS
+if [[ $SMSAPIKEY != "" ]]; then
+        echo -e "${GREEN}[SMS]${NC} - found SMS API key... SMS=true. Alerts going to $SMSPHONE "        
+        export SMS=true
+else
+        echo -e "${RED}[SMS]${NC} - No SMS API key found. No SMS alerts sent."
+        export SMS=false
+fi
+
+
+
+
+## baseline ()
+## Perform a baseline scan
+baseline () {
+	export BASEFILE="$(date +%Y-%m-%d)-hbban-baseline"
+	echo "##### Baseline Scan $(date +%Y-%m-%d), by hbban #####" > $SCANDIR/$BASEFILE
+	rpm -Va | grep ^..5 >> $SCANDIR/$BASEFILE
+	logger -t $TAG "scan completed $(date +%Y-%m-%d)"
+}
+
+## scan ()
+## Perform new scan and set $STATUS
+scan () {
+	export SCANFILE="$(date +%Y-%m-%d)-hbban-scan"
+	echo "##### Comparison Scan $(date +%Y-%m-%d), by hbban #####" > $SCANDIR/$SCANFILE
+	rpm -Va | grep ^..5 >> $SCANDIR/$SCANFILE
+}
+
+## compare () 
+## Do the new scan to baseline comparision
+compare () {
+	export BASEFILE=""
+	## last three baselines
+	export SCANFILE=$(ls -1rt $SCANDIR/*-scan | tail -1)
+	for BASEFILE in "$SCANDIR"/*-hbban-baseline
+	do
+		echo "[COMPARE] - Comparing $BASEFILE vs $SCANFILE"
+		diff -B -I "^#" $BASEFILE $SCANFILE
+		export STATUS=$?
+	done
+	if [[ $STATUS != "0" ]]; then
+		echo -e "${RED}[COMPARE]${NC} - WARNING.. ANOMALY DETECTED.. sending alert. "
+		alert
+		exit 1
+	else
+		echo -e "${GREEN}[COMPARE]${NC} - No anomalies detected. All good. "
+		exit 0
+	fi
+}
+
+## cleanup ()
+## Cleanup (purge old scans > 6mo old
+cleanup () {
+	## Delete all scan files over 6 months old
+	find $SCANDIR -mtime -name "hbban-scan-*" -exec /bin/rm {} \;
+	logger -t $TAG "cleanup completed $(date +%Y-%m-%d)"
+}
+
+## alert () 
+## Function to send the SMS alert
+alert () {
+	logger -t $TAG "problem detected "
+        ##echo -e "${RED}ERROR: ${NC}Multiple healthchecks failing.. Notify admin!..."
+
+        if [[ $SMS == true ]];then
+                export SMSMESSAGEHOST="$TAG problem detected on $HOSTNAME at $(date +%Y-%m-%d) "
+                echo -e "${RED}[SMS] SMS enabled. Sending txt alert to $SMSPHONE ${NC}"
+                echo -e "\t$SMSMESSAGEHOST"
+                #echo curl -X POST $SMSENDPOINT   --data-urlencode  phone=$SMSPHONE   --data-urlencode   message="$SMSMESSAGEHOST" -d key=$SMSAPIKEY
+                curl -X POST $SMSENDPOINT   --data-urlencode  phone=$SMSPHONE   --data-urlencode   message="$SMSMESSAGEHOST" -d key=$SMSAPIKEY >/dev/null 2>&1 &&\
+                	echo -e "${GREEN}[SMS] SUCCESS..${NC}" ||\
+                	echo -e "${RED}[SMS] FAIL...${NC}"
+		logger -t $TAG "$SMSMESSAGEHOST" 
+                echo
+        else
+                echo -e "${RED}[WARNING]${NC} $SMSMESSAGEHOST"
+		logger -t $TAG "$SMSMESSAGEHOST" 
+        fi
+        return 0
+}
+
+
+
+## main
+## depending on which script/link is called.. it will either compare (default), scan system for today, or create a new baseline
+##############################
+
+## Conditional to check for hbban-baseline, hhban-scan or hhban-compare
+if [[ $(echo $0 |grep baseline >/dev/null 2>&1 ; echo $?) == "0" ]]; then
+	baseline
+elif [[ $(echo $0 |grep scan >/dev/null 2>&1 ; echo $?) == "0" ]]; then
+	scan
+else 
+	compare
+fi
+
+
