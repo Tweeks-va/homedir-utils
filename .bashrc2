@@ -1,1 +1,9 @@
+
+## Custom
+export PATH=$PATH:/home/tweeks/.local/bin
 alias p='ping 8.8.8.8'
+alias gitpass="cat /home/tweeks/.gitconfig | grep password | cut -f2 -d'=' | tr '\n' ' ' | sed -e 's/ //g' | xclip -i -selection clipboard"
+
+
+
+
